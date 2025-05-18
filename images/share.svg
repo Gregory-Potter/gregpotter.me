@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="128px"
+  height="128px"
+  id="shareIcon"
+  viewBox="0 0 256 256"
+>
+  <defs>
+    <linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="g">
+      <stop  offset="0.0" stop-color="#0D6232" />
+      <stop  offset="0.1071" stop-color="#196E34" />
+      <stop  offset="0.3503" stop-color="#2B8835" />
+      <stop  offset="0.5" stop-color="#399E38" />
+      <stop  offset="0.7016" stop-color="#2B8835" />
+      <stop  offset="0.8866" stop-color="#176E33" />
+      <stop  offset="1.0" stop-color="#0B6336" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="55" ry="55" x="0"  y="0"  fill="#1B5C2C" />
+  <rect width="246" height="246" rx="50" ry="50" x="5"  y="5"  fill="#31A032" />
+  <rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#g)" />
+  <path
+    d="M172 72 L72 128 L172 184"
+    fill="none"
+    stroke="#FFF"
+    stroke-width="20"
+    stroke-linejoin="round"
+  />
+  <circle cx="72" cy="128" r="32" fill="#FFF" />
+  <circle cx="172" cy="72" r="32" fill="#FFF" />
+  <circle cx="172" cy="184" r="32" fill="#FFF" />
+</svg>

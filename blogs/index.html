@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blogs</title>
+	<link rel="stylesheet" href="../style.css">
+	<style>
+		ol {
+			list-style: square;
+		}
+		time {
+			font-family: ui-monospace;
+			font-size: inherit;
+		}
+	</style>
+	<script type="module" src="../components/primary-nav.js"></script>
+</head>
+<body>
+	<header>
+		<primary-nav current="blogs"></primary-nav>
+	</header>
+	<main>
+		<h1>Blogs</h1>
+		<hgroup>
+			<h2>
+				<a href="./ponderance.html">Ponderance</a>
+				<a href="./ponderance.atom">
+					<img
+						src="../images/nav-feed.svg"
+						alt="Atom feed"
+						style="height: 1.3cap; vertical-align: -0.2cap;"
+					>
+				</a>
+			</h2>
+			<p>General musings</p>
+		</hgroup>
+		<ol>
+			<li><time datetime="">Coming Soon</time>: <a>Diadic Rationals</a></li>
+		</ol>
+	</main>
+</body>
+</html>

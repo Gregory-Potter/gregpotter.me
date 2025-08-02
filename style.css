@@ -1,0 +1,103 @@
+@view-transition {
+	navigation: auto;
+}
+::view-transition-group(main) {
+	animation-duration: 0.4s;
+}
+::view-transition-old(main) {
+	animation-name: slide-out;
+}
+::view-transition-new(main) {
+	animation-name: slide-in;
+}
+@keyframes slide-in {
+	from { translate: 100vw 0; }
+}
+@keyframes slide-out {
+	to { translate: -100vw 0; }
+}
+
+:root {
+	--p1: #eee;
+	--p2: #bbb;
+	--p3: #555;
+	--n1: #000;
+	--n2: #171719;
+	--accent: #eadfaf;
+	--hyperlink: oklch(0.77 0.13 248);
+	--hyperlink-hover: #fbc;
+	--hyperlink-active: #dfd;
+	--hyperlink-missing: #f77;
+	
+	background-color: var(--n1);
+	background-image: url("./images/teapots-and-flowers-pattern.png");
+	color: var(--p1);
+	font-family: system-ui, sans-serif;
+	text-wrap: pretty;
+}
+body {
+	max-width: 45rem;
+	margin: 0 auto;
+	padding-block-end: 2rlh;
+	background-color: var(--n1);
+	box-shadow: 0 0 10rem 5rem var(--n1);
+}
+
+nav {
+	border-block: 1px solid var(--p3);
+}
+nav > ul {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-block: 0.5em;
+	padding: 0;
+	list-style: none;
+}
+nav li[aria-current="location"] {
+	color: var(--accent);
+	text-decoration-line: underline;
+	text-decoration-style: double;
+}
+
+main {
+	margin-inline: 10px;
+	view-transition-name: main;
+}
+
+hgroup > h2 {
+	margin-block-end: 0;
+}
+hgroup > p {
+	margin-block-start: 0.25em;
+}
+
+a {
+	color: var(--hyperlink);
+}
+a:hover {
+	color: var(--hyperlink-hover);
+}
+a:active {
+	color: var(--hyperlink-active);
+}
+a:not([href]),
+a[href=""] {
+	color: var(--hyperlink-missing);
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.frac sup, .frac sub {
+	font-size: 50%;
+	vertical-align: baseline;
+}
+.frac sup {
+	position: relative;
+	bottom: 1cap;
+}
